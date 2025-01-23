@@ -224,7 +224,7 @@ footer{
        margin-left: 40px;
   }
 
-  @media screen and (min-width: 375px) {
+  @media screen and (max-width: 430px){
     nav {
         background-image: url(./assets/bg-hero-mobile.svg);
     }
