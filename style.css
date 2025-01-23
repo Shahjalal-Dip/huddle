@@ -13,12 +13,12 @@ nav{
 }
 #b1{
     position:absolute;
-    left: 85em;
+    left: 92em;
     top: 50px;
     background-color: white;
     border-radius: 20px;
     height: 45px;
-    width: 130px;
+    width: 150px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
@@ -31,7 +31,7 @@ nav{
     background-color: rgb(163, 255, 255);
     border-radius: 20px;
     height: 45px;
-    width: 130px;
+    width: 150px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
@@ -42,7 +42,7 @@ nav{
    border-radius: 30px;
    color: white;
    height: 55px;
-   width: 200px;
+   width: 240px;
    border: none;
    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
    cursor: pointer;
@@ -52,7 +52,7 @@ nav{
    border-radius: 30px;
    color: white;
    height: 55px;
-   width: 200px;
+   width: 240px;
    border: none;
    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
    cursor: pointer;
@@ -91,6 +91,7 @@ p{
     margin: 20px 60px 40px 60px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
+    background-color: white;
 }
 
 .flowing-conversation{
@@ -98,6 +99,7 @@ p{
     margin: 20px 60px 40px 60px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
+    background-color: white;
 }
 
 .your-user{
@@ -105,16 +107,18 @@ p{
     margin: 20px 60px 0 60px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
+    background-color: white;
 }
 .lastSec{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    position: relative;
+    background-color: white;
+    position: absolute;
     justify-items: center;
-    z-index: 10;
     width: 600px; 
     left: 400px;
-    height: 200px;
+    height: 250px;
     border-radius: 20px;
+    margin-top: 100px;
 }
 
 .lastSec p{
@@ -122,7 +126,7 @@ p{
     font-weight: 400,700;
     font-size: 30px;
     font-weight: bold;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 #i1{
     height: 300px;
@@ -155,5 +159,188 @@ p{
 
 
 footer{
+    position: relative;
+    z-index: -1;
+    top: 250px;
+    font-family: "Open Sans", serif;
+    font-weight: 400,700;
+    display: flex;
+    padding: 150px 90px 10px 150px;
+    justify-content: space-between;
+    column-gap:60px ;
+    color: hsl(193, 100%, 96%);
     background-color: hsl(192, 100%, 9%);
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 140px;
+  }
+  .social-icons a {
+    color: #e7e3e3; 
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+.social-icons a:hover {
+    color: #af00b5; 
+  }
+
+  .message-icon{
+    font-size: 36px; 
+    color: #dee6eb; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .message-icon :hover {
+    color: #ff0077; 
+  }
+
+
+  ul li{
+    list-style: none;
+    padding-top: 20px;
+    
+  }
+
+  .f1 p{
+       margin: -30px 10px 40px 60px;
+  }
+  .f1 h2{
+       margin: -50px 10px 40px 60px
+  }
+  .f2,.f3,.f4{
+        margin-top: 75px;
+  }
+  .f2,.f3{
+    width: 150px;
+  }
+  .copyright{
+       margin-top: 75px;
+       margin-left: 40px;
+  }
+
+  @media screen and (max-width: 375px) {
+    nav {
+        background-image: url(./assets/bg-hero-mobile.svg);
+    }
+
+    #img1 {
+         margin: 20px;
+         height: 20px;
+         width: 130px; 
+    }
+
+    #b1 {
+        left:240px;
+        top: -5px;
+        height: 30px;
+        margin: 20px auto;
+        display: block;
+        width: 120px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .box1 {
+        margin:50px 40px 20px 25px;
+        text-align: center;
+    }
+    
+    #img2 {
+        width: 75vw;
+        height: auto;
+        margin: 0;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+    .insideMain p {
+        font-size: 13px;
+        color: hsl(208, 11%, 55%);
+        margin: 20px;
+    }
+
+    .box1 p {
+        margin: 20px 0 40px 0;
+        font-size: 13px;
+    }
+    .grow-together,
+    .your-user {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 60px 15px 0 15px;
+        padding: 0 10px 0 10px;
+    }
+    .flowing-conversation{
+        flex-direction: column;
+        text-align: center;
+        margin: 60px 15px 0 15px;
+        padding: 0 10px 0 10px;
+    }
+    #i1, #i2, #i3 {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .insideMain {
+        margin: 20px ;
+    }
+ 
+    .lastSec {
+        width: 90%;
+        height: 150px;
+        left: 20px;
+        margin: 50px auto;
+    }
+    
+    .lastSec p{
+        font-size: 16px;
+        margin:-30px 10px 10px 10px;
+    }
+
+    #b2{
+        margin-top:10px;
+     }
+
+    footer {
+        top: 130px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .f1 h2,p{
+        margin: -30px 10px 20px 60px
+   }
+   .f1,.f2,.f3,.f4{
+         margin-top: 10px;
+   }
+   .message-icon {
+    margin-top: 70px;;
+    font-size: 26px; 
+  
+  }
+
+    .social-icons {
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .copyright {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    ul li {
+        padding-top: 10px;
+    }
 }
