@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 nav{
     background-image: url(assets/bg-hero-desktop.svg);
     
@@ -13,7 +14,7 @@ nav{
 }
 #b1{
     position:absolute;
-    left: 92em;
+    left: 85em;
     top: 50px;
     background-color: white;
     border-radius: 20px;
