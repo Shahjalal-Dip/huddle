@@ -34,11 +34,8 @@ To run the project locally, follow these steps:
 - A code editor (like VSCode) for any modifications.
 
 ### Installation
-1. Clone this repository:
-   [git clone https://github.com/Shahjalal-Dip/huddle.git](https://github.com/Shahjalal-Dip/huddle.git)
-   
-2. Navigate to the project directory:
-   cd huddle
+1. Clone this repository: [git clone https://github.com/Shahjalal-Dip/huddle.git](https://github.com/Shahjalal-Dip/huddle.git)
+2. Navigate to the project directory: cd huddle
 3. Open index.html in your browser to view the page.
 
 🖼️ Design Reference
