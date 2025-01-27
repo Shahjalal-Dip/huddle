@@ -187,6 +187,7 @@ footer{
   }
 .social-icons a:hover {
     color: #af00b5; 
+    transform: translateY(-5px);
   }
 
   .message-icon{
@@ -196,11 +197,6 @@ footer{
     transition: color 0.3s ease;
   }
 
-  .message-icon :hover {
-    color: #ff0077; 
-  }
-
-
   ul li{
     list-style: none;
     padding-top: 20px;
@@ -208,10 +204,10 @@ footer{
   }
 
   .f1 p{
-       margin: -30px 10px 40px 60px;
+       margin: -25px 10px 40px 45px;
   }
   .f1 h2{
-       margin: -50px 10px 40px 60px
+       margin: -50px 10px 40px 50px
   }
   .f2,.f3,.f4{
         margin-top: 75px;
@@ -223,6 +219,58 @@ footer{
        margin-top: 75px;
        margin-left: 40px;
   }
+
+/* #icon{
+    animation: randomNeonColors 28s ease-in-out infinite;
+} */
+.social-icons i {
+    animation: randomNeonColors 8s ease-in-out infinite;
+}
+
+@keyframes randomNeonColors {
+    0%, 100% {
+        filter: drop-shadow(0 0 8px #00ffff) 
+                drop-shadow(0 0 8px #00ffff) 
+                brightness(3);
+    }
+    20% {
+        filter: drop-shadow(0 0 8px #ff00ff) 
+                drop-shadow(0 0 8px #ff00ff) 
+                brightness(3);
+    }
+    40% {
+        filter: drop-shadow(0 0 8px #ffff00) 
+                drop-shadow(0 0 8px #ffff00) 
+                brightness(3);
+    }
+    60% {
+        filter: drop-shadow(0 0 8px #00ff00) 
+                drop-shadow(0 0 8px #00ff00) 
+                brightness(3);
+    }
+    80% {
+        filter: drop-shadow(0 0 8px #ff3300) 
+                drop-shadow(0 0 8px #ff3300) 
+                brightness(3);
+    }
+}
+
+/* Offset animations for each icon */
+ .social-icons .fa-facbook{
+    animation-delay:0s;
+}
+
+.social-icons .fa-twitter {
+    animation-delay: -4s;
+}
+
+.social-icons .fa-instagram {
+    animation-delay: -8s;
+}
+
+.social-icons:hover i {
+    filter: brightness(2);
+}
 
   @media screen and (max-width: 430px){
     nav {
@@ -312,16 +360,20 @@ footer{
     #b2{
         margin-top:10px;
      }
-
+     
     footer {
         top: 130px;
         flex-direction: column;
         padding: 20px;
     }
 
-    .f1 h2,p{
-        margin: -30px 10px 20px 60px
+    .f1 h2{
+        margin: -30px 10px 20px 40px
    }
+
+   .f1 p{
+    margin: -25px 10px 20px 40px
+  }
    .f1,.f2,.f3,.f4{
          margin-top: 10px;
    }
